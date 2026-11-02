@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AiSOC 小白中文教程 · xianyu110</title>
+  <meta name="description" content="beenuar/AiSOC 社区非官方中文入门：aisoc-sandbox 离线 demo 与 make up 自托管。" />
+  <style>
+    :root { color-scheme: light dark; --bg:#0f1419; --fg:#e7ecf3; --muted:#9aa7b5; --card:#1a2330; --accent:#6cb6ff; --ok:#3dd68c; --warn:#e6b84d; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f6f8fb; --fg:#1b2430; --muted:#5b6b7c; --card:#fff; --accent:#0066cc; --ok:#0a7a44; --warn:#9a6b00; }
+    }
+    body { margin:0; font-family: ui-sans-serif, system-ui, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif; background:var(--bg); color:var(--fg); line-height:1.65; }
+    main { max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.75rem; margin: 0 0 .5rem; }
+    .sub { color: var(--muted); margin-bottom: 1.5rem; }
+    .card { background: var(--card); border-radius: 12px; padding: 1.25rem 1.35rem; margin: 1rem 0; box-shadow: 0 1px 0 rgba(0,0,0,.08); }
+    a { color: var(--accent); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+    pre { background: #0b1220; color: #d7e2f0; padding: 1rem; border-radius: 8px; overflow:auto; }
+    @media (prefers-color-scheme: light) { pre { background:#111827; } }
+    .ok { color: var(--ok); font-weight: 600; }
+    .warn { color: var(--warn); font-weight: 600; }
+    ul { padding-left: 1.2rem; }
+    footer { margin-top: 2rem; color: var(--muted); font-size: .9rem; }
+    img.shot { max-width:100%; height:auto; border-radius:8px; margin:.75rem 0; border:1px solid rgba(127,127,127,.25); }
+    figcaption { color:var(--muted); font-size:.85rem; margin:.25rem 0 1rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AiSOC 小白中文教程</h1>
+  <p class="sub">社区非官方导读 · 上游 <a href="https://github.com/beenuar/AiSOC">beenuar/AiSOC</a> · <a href="https://beenuar.github.io/AiSOC/">文档</a></p>
+  <div class="card">
+    <p><span class="ok">完整图文教程</span>在 GitHub README：</p>
+    <p><a href="https://github.com/xianyu110/awesome-aisoc-zh#readme"><strong>打开 README →</strong></a></p>
+  </div>
+  <div class="card">
+    <h2>30 秒上手（无 Docker）</h2>
+    <pre>python3 -m venv venv && ./venv/bin/pip install aisoc-sandbox
+./venv/bin/aisoc-sandbox demo</pre>
+  </div>
+  <div class="card">
+    <h2>截图</h2>
+    <figure>
+      <img class="shot" src="images/01-sandbox-install.png" alt="sandbox install" loading="lazy" />
+      <figcaption><span class="ok">真实截图</span> · aisoc-sandbox 0.1.0</figcaption>
+    </figure>
+    <figure>
+      <img class="shot" src="images/02-demo.png" alt="sandbox demo" loading="lazy" />
+      <figcaption><span class="ok">真实截图</span> · Investigation Ledger</figcaption>
+    </figure>
+    <figure>
+      <img class="shot" src="images/03-make-up-schematic.png" alt="make up" loading="lazy" />
+      <figcaption><span class="warn">示意图</span> · 完整 make up（需 Docker）</figcaption>
+    </figure>
+  </div>
+  <div class="card">
+    <h2>记住三件事</h2>
+    <ul>
+      <li>先 sandbox 理解账本，再上 Docker 全栈</li>
+      <li>管理员密码只显示一次；`.env` 勿进 Git</li>
+      <li>模型优先本地 Ollama / DeepSeek / 国内兼容端</li>
+    </ul>
+  </div>
+  <footer>教程文本 MIT · 上游 MIT · 与 beenuar 无官方隶属 · 2026-11-02</footer>
+</main>
+</body>
+</html>
